@@ -22,7 +22,6 @@
   <section>
   <section id="Attention">
     <h2>Attention<h2/>
-    <article>
     <p>attention tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
@@ -30,7 +29,6 @@
 <section>
   <section id="Interest">
     <h2>Interest<h2/>
-    <article>
     <p>Interest tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
@@ -38,7 +36,6 @@
 <section>
   <section id="Desire">
     <h2>Desire<h2/>
-    <article>
     <p>Desire<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
@@ -46,7 +43,6 @@
 <section>
   <section id="Action">
     <h2>Action<h2/>
-    <article>
     <p>action tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>

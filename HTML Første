@@ -1,2 +1,60 @@
-a
-ipgjfipj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Project Pyramid</title>
+<link rel="Stylesheet" href="index.css" />
+</head>
+<body>
+<header>
+        <h1>Project Pyramid</h1>
+    </header>
+<nav>
+        <ul>
+            <li><a href="#Attention">Attention</a></li>
+            <li><a href="#Interest">Interest</a></li>
+            <li><a href="#Desire">Desire</a></li>
+            <li><a href="#Action">Action</a></li>
+        </ul>
+    </nav>
+
+<main>
+  <section>
+  <section id="Attention">
+    <h2>Attention<h2/>
+    <article>
+    <p>attention tekst<p>
+    <img src="link" width="300" height="300" alt="Billedetekst">
+    </section>
+
+<section>
+  <section id="Interest">
+    <h2>Interest<h2/>
+    <article>
+    <p>Interest tekst<p>
+    <img src="link" width="300" height="300" alt="Billedetekst">
+    </section>
+
+<section>
+  <section id="Desire">
+    <h2>Desire<h2/>
+    <article>
+    <p>Desire<p>
+    <img src="link" width="300" height="300" alt="Billedetekst">
+    </section>
+
+<section>
+  <section id="Action">
+    <h2>Action<h2/>
+    <article>
+    <p>action tekst<p>
+    <img src="link" width="300" height="300" alt="Billedetekst">
+    </section>
+
+</main>
+ <footer>
+        <p>&copy; 2024 Project Pyramid. Alle rettigheder forbeholdes.</p>
+    </footer>
+
+</body>
+</html>

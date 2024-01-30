@@ -19,34 +19,41 @@
     </nav>
 
 <main>
+    <div>
   <section>
   <section id="Attention">
     <h2>Attention<h2/>
     <p>attention tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
+    </div>
 
+<div>
 <section>
   <section id="Interest">
     <h2>Interest<h2/>
     <p>Interest tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
+    </div>
 
+<div>
 <section>
   <section id="Desire">
     <h2>Desire<h2/>
     <p>Desire<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
+    </div>
 
+<div>
 <section>
   <section id="Action">
     <h2>Action<h2/>
     <p>action tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
-
+    </div>
 </main>
  <footer>
         <p>&copy; 2024 Project Pyramid. Alle rettigheder forbeholdes.</p>

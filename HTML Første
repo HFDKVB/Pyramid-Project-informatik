@@ -7,53 +7,46 @@
 </head>
 <body>
 <header>
-        <h1>Project Pyramid</h1>
+        <h1 class="title">Project Pyramid</h1>
     </header>
 <nav>
         <ul>
-            <li><a href="#Attention">Attention</a></li>
-            <li><a href="#Interest">Interest</a></li>
-            <li><a href="#Desire">Desire</a></li>
-            <li><a href="#Action">Action</a></li>
+            <li><a class="#link">Attention</a></li>
+            <li><a class="#link">Interest</a></li>
+            <li><a class="#link">Desire</a></li>
+            <li><a class="#link">Action</a></li>
         </ul>
     </nav>
 
 <main>
-    <div>
   <section>
   <section id="Attention">
-    <h2>Attention<h2/>
-    <p>attention tekst<p>
+    <h2 class="title"></h2>
+    <p class="description">attention tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
-    </div>
 
-<div>
 <section>
   <section id="Interest">
-    <h2>Interest<h2/>
-    <p>Interest tekst<p>
+    <h2 class="title">Interest</h2>
+    <p class="description">Interest tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
-    </div>
 
-<div>
 <section>
   <section id="Desire">
-    <h2>Desire<h2/>
-    <p>Desire<p>
+    <h2 class="title">Desire</h2>
+    <p class="description">Desire<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
-    </div>
 
-<div>
 <section>
   <section id="Action">
-    <h2>Action<h2/>
-    <p>action tekst<p>
+    <h2 class="title">Action</h2>
+    <p class="description">action tekst<p>
     <img src="link" width="300" height="300" alt="Billedetekst">
     </section>
-    </div>
+
 </main>
  <footer>
         <p>&copy; 2024 Project Pyramid. Alle rettigheder forbeholdes.</p>

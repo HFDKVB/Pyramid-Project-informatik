@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
 <title>Project Pyramid</title>
-<link rel="Stylesheet" href="index.css" />
+<link rel="Stylesheet" href="projekt css.css" />
 </head>
 <body>
 <header>
-        <h1 class="title">Project Pyramid</h1>
+        <h1 class="maintitle">Project Pyramid</h1>
     </header>
 <nav>
         <ul>
-            <li><a class="#link">Attention</a></li>
-            <li><a class="#link">Interest</a></li>
-            <li><a class="#link">Desire</a></li>
-            <li><a class="#link">Action</a></li>
+            <li><a href="#Attention">Attention</a></li>
+            <li><a href="#Interest">Interest</a></li>
+            <li><a href="#Desire">Desire</a></li>
+            <li><a href="#Action">Action</a></li>
         </ul>
     </nav>
 

@@ -7,7 +7,7 @@
 </head>
 <body>
 <header>
-        <h1 class="maintitle">Project Pyramid</h1>
+        <h1>PROJECT PYRAMID</h1>
     </header>
 <nav>
         <ul>
@@ -19,32 +19,37 @@
     </nav>
 
 <main>
+
   <section>
-  <section id="Attention">
-    <h2 class="title"></h2>
-    <p class="description">attention tekst<p>
-    <img src="link" width="300" height="300" alt="Billedetekst">
+    <section id="Attention">
+        <h2>Attention</h2>
+    <div class="first">
+    </div>
+    <p>attention tekst</p>
     </section>
 
 <section>
   <section id="Interest">
-    <h2 class="title">Interest</h2>
-    <p class="description">Interest tekst<p>
-    <img src="link" width="300" height="300" alt="Billedetekst">
+    <h2>Interest</h2>
+    <div class="second">
+    </div>
+    <p>Interest tekst<p>
     </section>
 
 <section>
   <section id="Desire">
-    <h2 class="title">Desire</h2>
-    <p class="description">Desire<p>
-    <img src="link" width="300" height="300" alt="Billedetekst">
+    <h2>Desire</h2>
+    <div class="third">
+    </div>
+    <p>Desire<p>
     </section>
 
 <section>
   <section id="Action">
-    <h2 class="title">Action</h2>
-    <p class="description">action tekst<p>
-    <img src="link" width="300" height="300" alt="Billedetekst">
+    <h2>Action</h2>
+    <div class="fourth">
+    </div>
+    <p>action tekst<p>
     </section>
 
 </main>

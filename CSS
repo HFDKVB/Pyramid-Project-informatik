@@ -1,7 +1,25 @@
-.container {
-    background-color: #dhdh
+.maintitle {
+    color: #ededed;
+    font-style: arial;
+    font-size:  36px;
+    text-align: center;
+    text-shadow: -1px 1px 0 #41ba45,
+	1px 1px 0 #c63d2b,
+	1px -1px 0 #42afac,
+	-1px -1px 0 #c6c23f;
 }
 
-.title {
-    color: #jdjd
-    font:
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+li {
+    margin-right: 100px;
+}
+
+body {
+    background-color: #330033;
+}
+

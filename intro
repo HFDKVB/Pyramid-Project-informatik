@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout Terminal</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        #loading-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #terminal {
+        display: none;
+        white-space: pre-line;
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+        padding: 20px;
+        position: absolute;
+        top: 0; /* Change this to 0 */
+        left: 50%;
+        transform: translateX(-50%); /* Change this to only translate horizontally */
+        max-height: 100vh; /* Set a maximum height for the terminal */
+}
+
+        body::-webkit-scrollbar {
+            display: none;
+
+
+        }
+
+        #command-input {
+            color: #00ff00;
+            border: none;
+            background-color: black;
+            outline: none;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+            font-family: 'Courier New', monospace;
+        }
+  #left-gif, #right-gif {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: auto;
+            display: none; /* Hide initially */
+        }
+
+        #left-gif {
+            left: 0;
+        }
+
+        #right-gif {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="left-gif">
+    <img src="https://i.pinimg.com/originals/92/c5/b2/92c5b20f647f2b2d546ee54131f18148.gif" alt="Left GIF">
+</div>
+
+<div id="right-gif">
+    <img src="https://i.pinimg.com/originals/92/c5/b2/92c5b20f647f2b2d546ee54131f18148.gif" alt="Right GIF">
+</div>
+
+
+<div id="loading-screen">
+    <h1>Loading...</h1>
+</div>
+
+<div id="terminal">
+    <pre>
+░       ░░░       ░░░░      ░░░        ░░        ░░░      ░░░        ░
+▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒▒▒▒▒▒▒  ▒▒  ▒▒▒▒▒▒▒▒  ▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒
+▓       ▓▓▓       ▓▓▓  ▓▓▓▓  ▓▓▓▓▓▓▓▓  ▓▓      ▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓
+█  ████████  ███  ███  ████  ██  ████  ██  ████████  ████  █████  ████
+█  ████████  ████  ███      ████      ███        ███      ██████  ████
+
+░       ░░░  ░░░░  ░░       ░░░░      ░░░  ░░░░  ░░        ░░       ░░
+▒  ▒▒▒▒  ▒▒▒  ▒▒  ▒▒▒  ▒▒▒▒  ▒▒  ▒▒▒▒  ▒▒   ▒▒   ▒▒▒▒▒  ▒▒▒▒▒  ▒▒▒▒  ▒
+▓       ▓▓▓▓▓    ▓▓▓▓       ▓▓▓  ▓▓▓▓  ▓▓        ▓▓▓▓▓  ▓▓▓▓▓  ▓▓▓▓  ▓
+█  ███████████  █████  ███  ███        ██  █  █  █████  █████  ████  █
+█  ███████████  █████  ████  ██  ████  ██  ████  ██        ██       ██
+
+
+ANSWER RIDDLE TO ENTER
+
+I reach towards the heavens
+
+I hold treasure within
+
+And throughout many ages I've shed some skin
+
+I've watched as nations rise and fall
+
+Sturdy, rock, through it all
+
+WHAT AM I ?
+
+
+    <span id="command-prefix">\guest> </span><input type="text" id="command-input" onkeydown="handleCommand(event)">
+    </pre>
+</div>
+
+<script>
+    // Simulate loading with a delay
+    setTimeout(function() {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('terminal').style.display = 'block';
+        document.getElementById('right-gif').style.display = 'block';
+        document.getElementById('left-gif').style.display = 'block';
+        document.getElementById('command-input').focus();
+    }, 1000); // 3000 milliseconds (3 seconds) delay for demonstration
+
+    function handleCommand(event) {
+        if (event.key === "Enter") {
+            const inputElement = document.getElementById('command-input');
+            const command = inputElement.value;
+
+            // Process the command (you can customize this part)
+            processCommand(command);
+
+            // Clear the input field
+            inputElement.value = '';
+        }
+    }
+
+    function processCommand(command) {
+  // Display the entered command
+  const outputElement = document.createElement('div')
+  outputElement.innerText = "> " + command;
+  const terminal = document.getElementById('terminal')
+  terminal.appendChild(outputElement);
+
+  // Show the message with a delay
+  if (command === "PYRAMID") {
+    setTimeout(function() {
+      const messageElement = document.createElement('div')
+      messageElement.innerText = "\OVERLORD> You are ready!";
+      terminal.appendChild(messageElement);
+      setTimeout(function() {
+                    // opening new file with delay
+                    window.window.location.href = 'HTML Første.html'
+                }, 1000); // 2000 milliseconds (1 seconds) delay
+            }, 1000); // 1000 milliseconds (1 second) delay
+
+  }
+
+    else {
+            // Show a wrong answer message with a delay
+            setTimeout(function() {
+                const messageElement = document.createElement('div');
+                messageElement.innerText = "\OVERLORD> YOU ARE WEAK!!!";
+                terminal.appendChild(messageElement);
+
+                // Delay before opening YouTube
+                setTimeout(function() {
+                    // Open YouTube in a new tab
+                    window.open('https://rickroll.it/rickroll.mp4', '_blank');
+                }, 1000); // 2000 milliseconds (1 seconds) delay
+            }, 1000); // 1000 milliseconds (1 second) delay
+    }
+
+    }
+</script>
+</body>
+</html>

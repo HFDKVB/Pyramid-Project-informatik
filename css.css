@@ -1,76 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@font-face {
+    font-family: 'Machina';
+    src: url('fonts/neue-machina-free-for-personal-use/Neue Machina - Free for Personal Use/NeueMachina-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mono';
+    src: url('fonts/moonstrike-font/Moonstrike-nRqzP.otf') format('opentype'); /* Specify the TTF format */
+    font-weight: lighter;
+    font-style: normal;
+}
 
-header {
-    color: #ededed;
-    font-family: 'Orbitron', sans-serif;
-    font-size:  36px;
+h1 {
+    font-family: 'Mono'; /* Include a fallback font */
+    font-size: 80px;
     text-align: center;
-    text-shadow: -1px 1px 0 #ffe979,
-	1px 1px 0 #ad3c19,
-	1px -1px 0 #c5d1ae,
-	-1px -1px 0 #d86425;
-}
-
-a{
-    color: #ededed;
-    font-family: 'Orbitron', sans-serif;
-    font-size:  20px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: -2px 2px 0 #41ba45,
-	2px 2px 0 #c63d2b,
-	2px -2px 0 #42afac,
-	-2px -2px 0 #c6c23f;
-}
-
-a:hover{
-    color: orange;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-li {
-    margin-right: 100px;
-}
-
-.first {
-    background-image: url(C:/Users/sylle/Downloads/OIG.jpg);
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: flex-start;
-}
-
-.second {
-    background-image: ;
-}
-
-.third {
-    background-image: ;
-}
-
-.fourth {
-    background-image: ;
-}
-
-section{
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Adjust values as needed */
+    
     
 }
 
-body {
-    background-color: black;
-    color: white;
+
+p1 {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
+
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, rgb(175, 4, 243) 40%, rgb(175, 4, 243) 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1.5s linear infinite;
+}
+  
+  
+@keyframes shine {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+
+
+
+.container {
+  display: inline-block;
+}
+
+#container2 {
+  width: 100vw !important;
+  height: 100vw !important;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid purple;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1s steps(20, end) forwards, removeBorder 7s forwards;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+
+}
+
+@keyframes removeBorder {
+  to { border-right: none; }
+}
+
+
+main {
+    /* margin-top: 50px; /* Add a top margin to avoid content overlay */
+    }
+
+.navbar a{
+    font-family: 'mono';
+    font-size:  30px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    /*background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(166, 0, 188, 0.66) 57.8%);
+    /* -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+    /*background-clip: text;
+    /*color: transparent; /* Make text transparent */
+
+
+}
+
+.navbar a:hover{
+    background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(166, 0, 188, 0.66) 57.8%);
+    -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Make text transparent */
+
+}
+.navbar {
+  background-color: transparent;
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  top: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  align-items: center;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 105vh;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 5s;
+}
+.show {
+  opacity: 1;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
 
